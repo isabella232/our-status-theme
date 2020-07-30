@@ -31,8 +31,8 @@ You can start a local instance of Ghost using:
 ```
 yarn ghost-start
 ```
-Which will start a ghost instance at: http://localhost:2368/ghost/
-You can open it and create your account to test the theme.
+Which will start a ghost instance at: http://localhost:2368/
+It should use the current state of this repo as its theme.
 
 The instance will be installed at `/var/tmp/ghost`.
 It will have this repo symlinked under `content/themes/casper`.
