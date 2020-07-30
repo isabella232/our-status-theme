@@ -1,0 +1,30 @@
+{{!< default}}
+
+{{#tag}}
+<div class="blog-intro">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-lg-5 ml-auto mr-auto text-center">
+                <h1>{{name}}</h1>
+                <p class="p-large">{{description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{{/tag}}
+
+{{!-- The main content area --}}
+<main id="content" role="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-10 col-md-12 ml-auto mr-auto">
+                <div class="loop loop-grid">
+                    {{#foreach posts}}
+                        {{> "loop"}}
+                    {{/foreach}}
+                </div>
+                {{pagination}}
+            </div>
+        </div>
+    </div>
+</main>
