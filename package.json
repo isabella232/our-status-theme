@@ -5,6 +5,9 @@
     "version": "1.3.0",
     "license": "GNU General Public License, Version 2",
     "scripts": {
+        "ghost-install": "./scripts/ghost_install.sh",
+        "ghost-start": "ghost start -D -d /var/tmp/ghost",
+        "ghost-stop": "ghost stop -D -d /var/tmp/ghost",
         "getcss": "node ./scripts/getcss.js",
         "verify": "gscan -3 ./",
         "archive": "zip -r our-status-theme.zip . -x 'node_modules/*' -x '.git*'"
@@ -43,6 +46,7 @@
     },
     "devDependencies": {
         "download-file": "^0.1.5",
+        "ghost-cli": "^1.14.1",
         "gscan": "^3.5.5"
     }
 }
